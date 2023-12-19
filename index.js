@@ -5,10 +5,38 @@ const {
     InlineKeyboard,
     GrammyError,
     HttpError,
+    session
 } = require('grammy');
 const { getRandomQuestion, getCorrectAnswer } = require('./utils');
 
 const bot = new Bot(process.env.BOT_API_KEY);
+
+bot.use(session());
+
+bot.on(':message', async (ctx) => {
+    // Здесь необходимо заменить CHANNEL_ID на ID вашего телеграм-канала
+    const channel = '@hello_world_singularity';
+
+    // Получаем ID пользователя
+    const userId = ctx.from.id;
+
+    // Проверяем, подписан ли пользователь на канал
+    const isSubscribed = await ctx.api.getChatMember(channel, userId)
+        .then((chatMember) => chatMember.status === 'member')
+        .catch(() => false);
+
+    // Теперь у нас есть информация о подписке пользователя
+    if (isSubscribed) {
+        // Разрешаем доступ к функционалу бота
+        ctx.reply('Доступ разрешён. Приветствую вас!');
+
+        // Далее здесь можно продолжить с логикой и функционалом бота
+    } else {
+        // Запрашиваем у пользователя подписаться на канал
+        ctx.reply('Для использования функционала бота, пожалуйста, подпишитесь на мой канал: ' + channel);
+    }
+});
+
 
 bot.command('start', async (ctx) => {
     const startKeyboard = new Keyboard()
