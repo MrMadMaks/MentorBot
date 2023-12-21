@@ -5,7 +5,7 @@ const {
     InlineKeyboard,
     GrammyError,
     HttpError,
-    session
+    session,
 } = require('grammy');
 const { getRandomQuestion, getCorrectAnswer } = require('./utils');
 
@@ -13,47 +13,31 @@ const bot = new Bot(process.env.BOT_API_KEY);
 
 bot.use(session());
 
-bot.on(':message', async (ctx) => {
-    // Здесь необходимо заменить CHANNEL_ID на ID вашего телеграм-канала
-    const channel = '@hello_world_singularity';
+bot.command('start', async (ctx) => {
 
-    // Получаем ID пользователя
+    const channel = 'hello_world_singularity';
+    const channelId = -1001728607448
+
     const userId = ctx.from.id;
 
-    // Проверяем, подписан ли пользователь на канал
-    const isSubscribed = await ctx.api.getChatMember(channel, userId)
-        .then((chatMember) => chatMember.status === 'member')
-        .catch(() => false);
+    const isSubscribed = await ctx.api.getChatMember(channelId, userId)
 
-    // Теперь у нас есть информация о подписке пользователя
-    if (isSubscribed) {
-        // Разрешаем доступ к функционалу бота
-        ctx.reply('Доступ разрешён. Приветствую вас!');
-
-        // Далее здесь можно продолжить с логикой и функционалом бота
+    if (isSubscribed.status === 'member' || isSubscribed.status === 'creator') {
+        const startKeyboard = new Keyboard()
+            .text('HTML')
+            .text('CSS')
+            .row()
+            .text('JavaScript')
+            .text('React')
+            .row()
+            .text('Случайный вопрос')
+            .resized();
+        await ctx.reply('С чего начнем? Выбери тему вопроса в меню 👇', {
+            reply_markup: startKeyboard,
+        });
     } else {
-        // Запрашиваем у пользователя подписаться на канал
-        ctx.reply('Для использования функционала бота, пожалуйста, подпишитесь на мой канал: ' + channel);
+        ctx.reply('Для использования бота, пожалуйста, подпишитесь на мой канал: t.me/' + channel);
     }
-});
-
-
-bot.command('start', async (ctx) => {
-    const startKeyboard = new Keyboard()
-        .text('HTML')
-        .text('CSS')
-        .row()
-        .text('JavaScript')
-        .text('React')
-        .row()
-        .text('Случайный вопрос')
-        .resized();
-    //await ctx.reply(
-    //    'Привет! Я — Mentor Bot 🤖 \nЯ помогу тебе подготовиться к интервью по фронтенду',
-    //);
-    await ctx.reply('С чего начнем? Выбери тему вопроса в меню 👇', {
-        reply_markup: startKeyboard,
-    });
 });
 
 bot.hears(
