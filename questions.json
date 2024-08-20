@@ -1,5 +1,5 @@
 {
-  "html": [
+  "html/css": [
     {
       "id": 1,
       "text": "Какой тег используется для создания ссылки?",
@@ -252,47 +252,45 @@
       "text": "Что такое атрибут 'alt' в теге <img>?",
       "hasOptions": false,
       "answer": "Он используется для предоставления альтернативного текста, который будет отображаться в случае, если изображение не может быть загружено. Это также может быть полезно для обеспечения доступности, поскольку скрин-ридеры могут использовать этот текст для описания изображения пользователям с ограниченными возможностями."
-    }
-  ],
-  "css": [
+    },
     {
-      "id": 1,
+      "id": 29,
       "text": "В чем разница между «сбросом» и «нормализацией» CSS? Что бы вы выбрали и почему?",
       "hasOptions": false,
       "answer": "Сброс (reset) сбрасывает все встроенные в браузер стили элементов. Normalize приводит стили к единому виду во всех браузерах. Лучше использовать Normalize из-за кроссбраузерности."
     },
     {
-      "id": 2,
+      "id": 30,
       "text": "Что такое специфичность селекторов CSS и как она работает?",
       "hasOptions": false,
       "answer": "Специфичность селектора (еще называют весом) это свойство определяющее приоритет стилевого правила, то есть то, какой стиль будет применен к HTML элементу в итоге. Например, используя какую-нибудь UI библиотеку, элементам этой библиотеки будут применены правила заданные авторами по умолчанию. При необходимости можно поменять стили на свои, «перебив» дефолтные более специфичным селектором.\n\nПодробнее тут: <a href='https://developer.mozilla.org/ru/docs/Web/CSS/Specificity' target='_blank'>Специфичность (MDN)</a>"
     },
     {
-      "id": 3,
+      "id": 31,
       "text": "Что такое CSS?",
       "hasOptions": false,
       "answer": "CSS (Cascading Style Sheets) - это язык стилей, используемый для описания внешнего вида и форматирования документа, написанного на языке разметки, таком как HTML. CSS позволяет разработчикам управлять макетом, шрифтами, цветами и другими стилистическими аспектами веб-страницы."
     },
     {
-      "id": 4,
+      "id": 32,
       "text": "Почему, как правило, лучше разместить подключение CSS в <head>, а <script> перед тэгом </body>? Знаете ли вы какие-либо исключения, приведите примеры?",
       "hasOptions": false,
       "answer": "Стили рекомендуется подключать в head для того, чтобы страница как можно быстрее приняла свой внешний вид. Скрипты подключенные в head могут затормозить этот процесс, в связи с этим их рекомендуется подключать перед закрывающим тегом body. Исключением являются скрипты аналитики, для определения количества посетителей, которые не дождались загрузки страницы. В этом случае скрипт должен быть подключен в head."
     },
     {
-      "id": 5,
+      "id": 33,
       "text": "Что делает свойство 'z-index' в CSS?",
       "hasOptions": false,
       "answer": "Свойство 'z-index' в CSS контролирует стековый порядок элементов по оси Z. Элемент с большим значением 'z-index' будет отображаться поверх элемента с меньшим значением 'z-index'."
     },
     {
-      "id": 6,
+      "id": 34,
       "text": "Какие есть способы отцентровать div?",
       "hasOptions": false,
       "answer": "Существует несколько способов отцентровать div в CSS, вот некоторые из них: \n1. Использование свойств margin и auto: `margin: 0 auto;`.\n2. Использование Flexbox: `display: flex; justify-content: center; align-items: center;`.\n3. Использование Grid Layout: `display: grid; place-items: center;`.\n4. Использование свойств text-align и inline-block: `text-align: center;` на родительском элементе и `display: inline-block;` на самом div.`."
     },
     {
-      "id": 7,
+      "id": 35,
       "text": "Какое свойство используется для установки цвета фона?",
       "hasOptions": true,
       "options": [
@@ -303,7 +301,7 @@
       ]
     },
     {
-      "id": 8,
+      "id": 36,
       "text": "Какое свойство позволяет установить внешние отступы элемента?",
       "hasOptions": true,
       "options": [
@@ -314,7 +312,7 @@
       ]
     },
     {
-      "id": 9,
+      "id": 37,
       "text": "Какое свойство используется для установки шрифта?",
       "hasOptions": true,
       "options": [
@@ -325,7 +323,7 @@
       ]
     },
     {
-      "id": 10,
+      "id": 38,
       "text": "Какое свойство CSS позволяет контролировать видимость элемента в DOM, но при этом сохраняет его место?",
       "hasOptions": true,
       "options": [
@@ -336,7 +334,7 @@
       ]
     },
     {
-      "id": 11,
+      "id": 39,
       "text": "Какое свойство CSS используется для установки теней элементов?",
       "hasOptions": true,
       "options": [
@@ -347,7 +345,7 @@
       ]
     },
     {
-      "id": 12,
+      "id": 40,
       "text": "Какой селектор выбирает все элементы .child, которые являются непосредственными дочерними элементами .parent?",
       "hasOptions": true,
       "options": [
@@ -358,7 +356,7 @@
       ]
     },
     {
-      "id": 13,
+      "id": 41,
       "text": "Какой селектор CSS выбирает все элементы, которые имеют указанный атрибут, начинающийся с определенной строки?",
       "hasOptions": true,
       "options": [
@@ -369,7 +367,7 @@
       ]
     },
     {
-      "id": 14,
+      "id": 42,
       "text": "Какой селектор CSS выбирает все элементы, которые имеют указанный атрибут, заканчивающийся определенной строкой?",
       "hasOptions": true,
       "options": [
@@ -377,6 +375,252 @@
         { "id": 2, "text": "[attr~=value]", "isCorrect": false },
         { "id": 3, "text": "[attr|=value]", "isCorrect": false },
         { "id": 4, "text": "[attr$=value]", "isCorrect": true }
+      ]
+    }
+  ],
+  "git": [
+    {
+      "id": 1,
+      "text": "Как в Git установить значение «Имя пользователя»? Через команду:",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git user.name", "isCorrect": false },
+        { "id": 2, "text": "git config user.name", "isCorrect": false },
+        {
+          "id": 3,
+          "text": "git config --global user.name",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "Все команды, кроме git user.name",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "text": "Как в Git установить глобально Email пользователя?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git --global user.email", "isCorrect": false },
+        { "id": 2, "text": "git config user.email", "isCorrect": false },
+        {
+          "id": 3,
+          "text": "git config --global user.email",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "git config -global user.email",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "text": "Как проверить текущие настройки конфигурации Git?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git config --list", "isCorrect": true },
+        { "id": 2, "text": "git status", "isCorrect": false },
+        { "id": 3, "text": "git show", "isCorrect": false },
+        { "id": 4, "text": "git info", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 4,
+      "text": "Как создать новый репозиторий Git?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git new", "isCorrect": false },
+        { "id": 2, "text": "git init", "isCorrect": true },
+        { "id": 3, "text": "git start", "isCorrect": false },
+        { "id": 4, "text": "git create", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 5,
+      "text": "Как добавить файл в индекс Git?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git add <filename>", "isCorrect": true },
+        { "id": 2, "text": "git stage <filename>", "isCorrect": false },
+        { "id": 3, "text": "git commit <filename>", "isCorrect": false },
+        { "id": 4, "text": "git include <filename>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 6,
+      "text": "Как сделать коммит в Git?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git commit -m '<message>'", "isCorrect": true },
+        { "id": 2, "text": "git push -m '<message>'", "isCorrect": false },
+        { "id": 3, "text": "git add -m '<message>'", "isCorrect": false },
+        { "id": 4, "text": "git log -m '<message>'", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 7,
+      "text": "Как посмотреть историю коммитов?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git history", "isCorrect": false },
+        { "id": 2, "text": "git log", "isCorrect": true },
+        { "id": 3, "text": "git status", "isCorrect": false },
+        { "id": 4, "text": "git commits", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 8,
+      "text": "Как создать новую ветку в Git?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git branch <branchname>", "isCorrect": true },
+        { "id": 2, "text": "git new <branchname>", "isCorrect": false },
+        { "id": 3, "text": "git checkout <branchname>", "isCorrect": false },
+        { "id": 4, "text": "git create <branchname>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 9,
+      "text": "Как переключиться на другую ветку?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git switch <branchname>", "isCorrect": true },
+        { "id": 2, "text": "git change <branchname>", "isCorrect": false },
+        { "id": 3, "text": "git move <branchname>", "isCorrect": false },
+        { "id": 4, "text": "git checkout <branchname>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 10,
+      "text": "Как объединить изменения из другой ветки в текущую?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git merge <branchname>", "isCorrect": true },
+        { "id": 2, "text": "git join <branchname>", "isCorrect": false },
+        { "id": 3, "text": "git combine <branchname>", "isCorrect": false },
+        { "id": 4, "text": "git integrate <branchname>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 11,
+      "text": "Как удалить ветку?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git delete <branchname>", "isCorrect": false },
+        { "id": 2, "text": "git branch -d <branchname>", "isCorrect": true },
+        { "id": 3, "text": "git remove <branchname>", "isCorrect": false },
+        {
+          "id": 4,
+          "text": "git branch --remove <branchname>",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "text": "Как отобразить изменения между коммитами?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git diff", "isCorrect": true },
+        { "id": 2, "text": "git status", "isCorrect": false },
+        { "id": 3, "text": "git log", "isCorrect": false },
+        { "id": 4, "text": "git changes", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 13,
+      "text": "Как получить обновления из удалённого репозитория?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git fetch", "isCorrect": true },
+        { "id": 2, "text": "git pull", "isCorrect": false },
+        { "id": 3, "text": "git update", "isCorrect": false },
+        { "id": 4, "text": "git sync", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 14,
+      "text": "Как отправить локальные изменения в удалённый репозиторий?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git push", "isCorrect": true },
+        { "id": 2, "text": "git send", "isCorrect": false },
+        { "id": 3, "text": "git upload", "isCorrect": false },
+        { "id": 4, "text": "git commit", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 15,
+      "text": "Как отменить изменения в рабочем каталоге?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git reset --hard", "isCorrect": true },
+        { "id": 2, "text": "git revert", "isCorrect": false },
+        { "id": 3, "text": "git discard", "isCorrect": false },
+        { "id": 4, "text": "git clean", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 16,
+      "text": "Как сохранить изменения в рабочем каталоге и добавить их в индекс?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git commit -a", "isCorrect": true },
+        { "id": 2, "text": "git add -a", "isCorrect": false },
+        { "id": 3, "text": "git save", "isCorrect": false },
+        { "id": 4, "text": "git stage -a", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 17,
+      "text": "Как просмотреть изменения, которые будут включены в следующий коммит?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git status", "isCorrect": false },
+        { "id": 2, "text": "git diff --cached", "isCorrect": true },
+        { "id": 3, "text": "git log", "isCorrect": false },
+        { "id": 4, "text": "git show", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 18,
+      "text": "Как создать и переключиться на новую ветку одновременно?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git branch -b <branchname>", "isCorrect": false },
+        { "id": 2, "text": "git switch -b <branchname>", "isCorrect": true },
+        { "id": 3, "text": "git checkout -b <branchname>", "isCorrect": true },
+        { "id": 4, "text": "git new <branchname>", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 19,
+      "text": "Как отобразить информацию о текущем ветке и её последнем коммите?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git branch -v", "isCorrect": true },
+        { "id": 2, "text": "git status", "isCorrect": false },
+        { "id": 3, "text": "git log -1", "isCorrect": false },
+        { "id": 4, "text": "git info", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 20,
+      "text": "Как изменить последний коммит?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "git commit --amend", "isCorrect": true },
+        { "id": 2, "text": "git reset --soft HEAD~1", "isCorrect": false },
+        {
+          "id": 3,
+          "text": "git rebase --interactive HEAD~1",
+          "isCorrect": false
+        },
+        { "id": 4, "text": "git change --last", "isCorrect": false }
       ]
     }
   ],
@@ -498,6 +742,291 @@
         { "id": 2, "text": "filter()", "isCorrect": true },
         { "id": 3, "text": "reduce()", "isCorrect": false },
         { "id": 4, "text": "forEach()", "isCorrect": false }
+      ]
+    }
+  ],
+  "typescript": [
+    {
+      "id": 1,
+      "text": "Что такое TypeScript и какова его цель?",
+      "hasOptions": false,
+      "answer": "TypeScript - это язык программирования с открытым исходным кодом, разработанный и поддерживаемый Microsoft. Цель TypeScript - добавить статическую типизацию к JavaScript, чтобы облегчить разработку больших приложений и улучшить их поддерживаемость."
+    },
+    {
+      "id": 2,
+      "text": "Какие преимущества предоставляет TypeScript по сравнению с JavaScript?",
+      "hasOptions": false,
+      "answer": "TypeScript предоставляет ряд преимуществ, включая статическую типизацию, улучшенную поддержку IDE, лучшую масштабируемость и читаемость кода, а также возможность использовать новейшие функции ECMAScript с более ранними версиями JavaScript."
+    },
+    {
+      "id": 3,
+      "text": "Как объявить переменную с явным типом данных в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для объявления переменной с явным типом данных в TypeScript используется синтаксис 'let/const/var variableName: Type = value;'. Например: 'let myNumber: number = 10;'"
+    },
+    {
+      "id": 4,
+      "text": "Что такое интерфейсы в TypeScript и как они используются?",
+      "hasOptions": false,
+      "answer": "Интерфейсы в TypeScript определяют структуру объекта, указывая типы его свойств. Они используются для описания формы объекта, что облегчает работу с различными типами данных. Например, 'interface Person { name: string; age: number; }' определяет структуру объекта с полями 'name' и 'age' типов string и number соответственно."
+    },
+    {
+      "id": 5,
+      "text": "Как объявить массив с определенным типом элементов в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для объявления массива с определенным типом элементов в TypeScript используется синтаксис 'let arrayName: Type[] = [value1, value2, ...];'. Например: 'let numbers: number[] = [1, 2, 3];'"
+    },
+    {
+      "id": 6,
+      "text": "Что такое generics (обобщения) в TypeScript и для чего они используются?",
+      "hasOptions": false,
+      "answer": "Generics (обобщения) в TypeScript позволяют создавать компоненты, которые могут работать с различными типами данных, не теряя типовой информации. Они широко используются при написании обобщенных алгоритмов и коллекций данных."
+    },
+    {
+      "id": 7,
+      "text": "Как объявить функцию с определенными типами параметров и возвращаемого значения в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для объявления функции с определенными типами параметров и возвращаемого значения в TypeScript используется синтаксис 'function functionName(param1: Type1, param2: Type2): ReturnType { // body }'. Например: 'function add(x: number, y: number): number { return x + y; }'"
+    },
+    {
+      "id": 8,
+      "text": "Что такое стрелочные функции (arrow functions) в TypeScript и как они используются?",
+      "hasOptions": false,
+      "answer": "Стрелочные функции (arrow functions) в TypeScript представляют собой синтаксически более краткую форму объявления функций, которая автоматически привязывает 'this' к окружающему контексту. Они часто используются для определения коллбэков и встроенных функций обратного вызова."
+    },
+    {
+      "id": 9,
+      "text": "Что такое пространства имен (namespaces) в TypeScript и как они используются?",
+      "hasOptions": false,
+      "answer": "Пространства имен (namespaces) в TypeScript позволяют организовывать код в логически связанные группы, предотвращая конфликты именования. Они используются для структурирования больших приложений и библиотек."
+    },
+    {
+      "id": 10,
+      "text": "Как определить перечисление (enum) в TypeScript и как его использовать?",
+      "hasOptions": false,
+      "answer": "Перечисление (enum) в TypeScript - это набор именованных константных значений. Они объявляются с помощью ключевого слова 'enum' и могут быть использованы для удобства работы с набором связанных значений. Например: 'enum Color { Red, Green, Blue }'"
+    },
+    {
+      "id": 11,
+      "text": "Что такое декораторы (decorators) в TypeScript и для чего они используются?",
+      "hasOptions": false,
+      "answer": "Декораторы (decorators) в TypeScript - это специальные функции, которые могут применяться к классам, методам, свойствам и параметрам, чтобы расширять их функциональность или изменять их поведение. Они широко используются в Angular для добавления метаданных и определения компонентов."
+    },
+    {
+      "id": 12,
+      "text": "Что такое strict mode в TypeScript и как его включить?",
+      "hasOptions": false,
+      "answer": "Strict mode в TypeScript - это режим строгой проверки типов, который усиливает правила проверки типов и обнаружения ошибок. Его можно включить, установив значение 'strict' в файле tsconfig.json или добавив флаг '--strict' при компиляции."
+    },
+    {
+      "id": 13,
+      "text": "Как определить тип для функции, которая может выбросить исключение (throw an error) в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для определения типа для функции, которая может выбросить исключение (throw an error) в TypeScript, можно использовать тип 'never'. Например: 'function throwError(message: string): never { throw new Error(message); }'"
+    },
+    {
+      "id": 14,
+      "text": "Что такое type assertion в TypeScript и как его использовать?",
+      "hasOptions": false,
+      "answer": "Type assertion в TypeScript - это способ явного указания типа переменной во время компиляции. Он позволяет обойти проверку типов компилятора, когда программист уверен в корректности типа. Например: 'let strLength: number = (someValue as string).length;'"
+    },
+    {
+      "id": 15,
+      "text": "Как использовать async и await в TypeScript для работы с асинхронными операциями?",
+      "hasOptions": false,
+      "answer": "Ключевые слова async и await в TypeScript используются для работы с асинхронными операциями, такими как вызовы API или обработка файлов. Async указывает, что функция возвращает промис, а await приостанавливает выполнение функции до завершения асинхронной операции и возвращает результат."
+    },
+    {
+      "id": 16,
+      "text": "Как определить тип для класса в TypeScript?",
+      "hasOptions": false,
+      "answer": "Для определения типа для класса в TypeScript используется ключевое слово 'class'. Например: 'class Person { name: string; age: number; constructor(name: string, age: number) { this.name = name; this.age = age; } }'"
+    },
+    {
+      "id": 17,
+      "text": "Что такое ambient declaration в TypeScript и как его использовать?",
+      "hasOptions": false,
+      "answer": "Ambient declaration в TypeScript - это способ объявления типов и интерфейсов для сторонних библиотек, которые не имеют объявлений типов встроенных в них. Они используются для поддержки автоматического разрешения типов для внешних библиотек."
+    },
+    {
+      "id": 18,
+      "text": "Как включить strict null checks в TypeScript и какие преимущества это дает?",
+      "hasOptions": false,
+      "answer": "Для включения strict null checks в TypeScript нужно установить значение 'strictNullChecks' в true в файле tsconfig.json. Это позволяет компилятору более строго проверять типы null и undefined, что уменьшает вероятность ошибок в программе."
+    },
+    {
+      "id": 19,
+      "text": "Как определить тип для функционального компонента в React с использованием TypeScript?",
+      "hasOptions": false,
+      "answer": "Для определения типа для функционального компонента в React с использованием TypeScript используется синтаксис generics. Например: 'const MyComponent: React.FC<Props> = ({ prop1, prop2 }) => { ... };'"
+    },
+    {
+      "id": 20,
+      "text": "Как определить тип для props и state в React компоненте с использованием TypeScript?",
+      "hasOptions": false,
+      "answer": "Для определения типа для props и state в React компоненте с использованием TypeScript используются интерфейсы (interfaces). Например: 'interface MyComponentProps { prop1: string; prop2: number; } interface MyComponentState { value: string; } class MyComponent extends React.Component<MyComponentProps, MyComponentState> { ... }'"
+    },
+
+    {
+      "id": 21,
+      "text": "Какой символ используется для указания типа 'any' в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "!", "isCorrect": false },
+        { "id": 2, "text": "?", "isCorrect": false },
+        { "id": 3, "text": "*", "isCorrect": false },
+        { "id": 4, "text": "any", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 22,
+      "text": "Какой ключевой момент следует учитывать при использовании типа 'unknown' в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "Тип 'unknown' допускает неявное приведение типов.",
+          "isCorrect": false
+        },
+        {
+          "id": 2,
+          "text": "Тип 'unknown' может быть присвоен только переменным типа 'any'.",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "Тип 'unknown' предотвращает неявное приведение типов.",
+          "isCorrect": true
+        },
+        {
+          "id": 4,
+          "text": "Тип 'unknown' может быть присвоен только переменным типа 'void'.",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "text": "Какой оператор используется для объединения типов в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "&", "isCorrect": false },
+        { "id": 2, "text": "|", "isCorrect": true },
+        { "id": 3, "text": "^", "isCorrect": false },
+        { "id": 4, "text": "&&", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 24,
+      "text": "Как объявить необязательный параметр функции в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "function functionName(param?: Type) {}",
+          "isCorrect": true
+        },
+        {
+          "id": 2,
+          "text": "function functionName(param: Type) {}",
+          "isCorrect": false
+        },
+        {
+          "id": 3,
+          "text": "function functionName(param!: Type) {}",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "function functionName(param?: Type) {}",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "text": "Как объявить несколько типов для переменной в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "let variable: Type1 = value;", "isCorrect": false },
+        {
+          "id": 2,
+          "text": "let variable: Type1 | Type2 = value;",
+          "isCorrect": true
+        },
+        {
+          "id": 3,
+          "text": "let variable: Type1, Type2 = value;",
+          "isCorrect": false
+        },
+        {
+          "id": 4,
+          "text": "let variable: Type1 & Type2 = value;",
+          "isCorrect": false
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "text": "Какой символ используется для указания неопределенного значения в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "?", "isCorrect": false },
+        { "id": 2, "text": "!", "isCorrect": false },
+        { "id": 3, "text": "void", "isCorrect": false },
+        { "id": 4, "text": "undefined", "isCorrect": true }
+      ]
+    },
+    {
+      "id": 27,
+      "text": "Какой оператор используется для определения типа переменной в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "typeof", "isCorrect": true },
+        { "id": 2, "text": "instanceof", "isCorrect": false },
+        { "id": 3, "text": "is", "isCorrect": false },
+        { "id": 4, "text": "as", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 28,
+      "text": "Как объявить переменную с неопределенным значением в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        {
+          "id": 1,
+          "text": "let variable: undefined = value;",
+          "isCorrect": false
+        },
+        { "id": 2, "text": "let variable: null = value;", "isCorrect": false },
+        { "id": 3, "text": "let variable: any = value;", "isCorrect": false },
+        {
+          "id": 4,
+          "text": "let variable: Type | undefined = value;",
+          "isCorrect": true
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "text": "Какой тип данных используется для представления чисел с плавающей точкой в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "float", "isCorrect": false },
+        { "id": 2, "text": "number", "isCorrect": true },
+        { "id": 3, "text": "double", "isCorrect": false },
+        { "id": 4, "text": "decimal", "isCorrect": false }
+      ]
+    },
+    {
+      "id": 30,
+      "text": "Как объявить тип для объекта с произвольными свойствами (index signature) в TypeScript?",
+      "hasOptions": true,
+      "options": [
+        { "id": 1, "text": "{ [key: string]: any }", "isCorrect": true },
+        { "id": 2, "text": "{ *: any }", "isCorrect": false },
+        { "id": 3, "text": "{ key: any}", "isCorrect": false },
+        { "id": 4, "text": "{ [key: any]: any }", "isCorrect": false }
       ]
     }
   ],
