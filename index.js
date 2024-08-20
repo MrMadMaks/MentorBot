@@ -24,12 +24,13 @@ bot.command('start', async (ctx) => {
 
     if (isSubscribed.status === 'member' || isSubscribed.status === 'creator') {
         const startKeyboard = new Keyboard()
-            .text('HTML')
-            .text('CSS')
+            .text('HTML/CSS')
+            .text('GIT')
             .row()
             .text('JavaScript')
-            .text('React')
+            .text('TypeScript')
             .row()
+            .text('React')
             .text('Случайный вопрос')
             .resized();
         await ctx.reply('С чего начнем? Выбери тему вопроса в меню 👇', {
@@ -41,7 +42,7 @@ bot.command('start', async (ctx) => {
 });
 
 bot.hears(
-    ['HTML', 'CSS', 'JavaScript', 'React', 'Случайный вопрос'],
+    ['HTML/CSS', 'GIT', 'JavaScript', 'TypeScript', 'React', 'Случайный вопрос'],
     async (ctx) => {
         const topic = ctx.message.text.toLowerCase();
         const { question, questionTopic } = getRandomQuestion(topic);
